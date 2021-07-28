@@ -8,8 +8,8 @@
   padding-top: 24px;
 }
 .lista-notas_item {
-  margin: 12px;
-  max-width: 240px;
-  max-height: 400px;
+  margin: 10px;
+  max-width: 300px;
+  max-height: 300px;
   display: inline;
 }
