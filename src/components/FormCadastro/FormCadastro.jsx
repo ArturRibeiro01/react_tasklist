@@ -26,23 +26,25 @@ class FormCadastro extends Component {
 
   render() {
     return (
-      <form className="form-cadastro" onSubmit={this._createCard.bind(this)}>
-        <input
-          className="form-cadastro_input"
-          type="text"
-          placeholder="Titulo"
-          onChange={this._handleTitulo.bind(this)}
-        />
-        <textarea
-          rows={15}
-          placeholder="Escreva sua nota..."
-          className="form-cadastro_input"
-          onChange={this._handleMessage.bind(this)}
-        ></textarea>
-        <button className="form-cadastro_input form-cadastro_submit">
-          Criar Anotação
-        </button>
-      </form>
+      <>
+        <form className="form-cadastro" onSubmit={this._createCard.bind(this)}>
+          <input
+            className="form-cadastro_input"
+            type="text"
+            placeholder="Titulo"
+            onChange={this._handleTitulo.bind(this)}
+          />
+          <textarea
+            rows={15}
+            placeholder="Escreva sua nota..."
+            className="form-cadastro_input"
+            onChange={this._handleMessage.bind(this)}
+          ></textarea>
+          <button className="form-cadastro_input form-cadastro_submit">
+            Criar Anotação
+          </button>
+        </form>
+      </>
     );
   }
 }
