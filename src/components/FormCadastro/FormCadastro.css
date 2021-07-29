@@ -30,7 +30,6 @@
   font-weight: 700;
   border: 2px solid transparent;
 }
-
 .form-cadastro_submit:active {
   background-color: var(--secundaria-ativa);
 }

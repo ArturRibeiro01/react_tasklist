@@ -7,18 +7,28 @@ import "./assets/index.css";
 
 class App extends Component {
   constructor() {
-    this.notas = [];
+    super();
+
+    this.state = {
+      notas: [],
+    };
   }
 
   createTask(title, message) {
-    console.log(`Uma nova nota foi criada ${title} ${message}`);
+    // console.log(`Uma nova nota foi criada ${title} ${message}`);
+    const novaNota = { title, message };
+    const novoArrayNotas = [...this.state.notas, novaNota];
+    const novoEstado = {
+      notas: novoArrayNotas,
+    };
+    this.setState(novoEstado);
   }
 
   render() {
     return (
       <section className="conteudo">
-        <FormCadastro createCard={this.createTask} />
-        <ListaDeNotas notas={[this.notas]} />
+        <FormCadastro createCard={this.createTask.bind(this)} />
+        <ListaDeNotas notas={this.state.notas} />
       </section>
     );
   }
