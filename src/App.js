@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   createTask(title, message) {
-    // console.log(`Uma nova nota foi criada ${title} ${message}`);
     const novaNota = { title, message };
     const novoArrayNotas = [...this.state.notas, novaNota];
     const novoEstado = {
