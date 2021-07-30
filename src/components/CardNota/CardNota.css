@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  /* background-color: var(--fundo-detalhes); */
   border-radius: 10px;
   flex-wrap: wrap;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   padding: 12px;
   transition: 0.2s ease-in;
+  position: relative;
 }
 .card-nota:hover {
   box-shadow: 0 0 4px rgba(250, 187, 24, 0.9);
@@ -24,8 +24,16 @@
   font-size: 1.2em;
   margin-bottom: 12px;
   font-weight: bold;
+  max-width: 240px;
 }
 
 .card-nota_texto {
   font-size: 1em;
+  max-width: 280px;
+}
+.svg_delete {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  cursor: pointer;
 }
